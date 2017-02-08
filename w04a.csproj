@@ -183,7 +183,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\nameLimit.cs" />
-    <Compile Include="Models\PartialClass\Product.cs" />
+    <Compile Include="Models\PartialClass\ProductPartial.cs" />
     <Compile Include="Models\Product.cs">
       <DependentUpon>ProductsModel.tt</DependentUpon>
     </Compile>
@@ -285,6 +285,8 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Products\EditorTemplates\CategoryDropDownList.cshtml" />
+    <Content Include="Views\Products\EditorTemplates\SupplierDropDownList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

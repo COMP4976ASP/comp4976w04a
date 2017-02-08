@@ -12,19 +12,17 @@ namespace w04a.Models
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.Web.Mvc;
 
     public partial class Product
     {
         public int ProductID { get; set; }
-        [Display(Name = "Product Name"), Required]
-        [nameLimit(3, ErrorMessage = "Product name should not exceed 3 words.")]
  
         public string ProductName { get; set; }
         public Nullable<int> SupplierID { get; set; }
         public Nullable<int> CategoryID { get; set; }
         public string QuantityPerUnit { get; set; }
 
-        [Display(Name = "Unit Price"), Required]
         public Nullable<decimal> UnitPrice { get; set; }
         public Nullable<short> UnitsInStock { get; set; }
         public Nullable<short> UnitsOnOrder { get; set; }
