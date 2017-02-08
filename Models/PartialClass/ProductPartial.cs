@@ -12,7 +12,7 @@ namespace w04a.Models
 
     public class ProductMetaData
     {
-        [ScaffoldColumn(false)]
+        [HiddenInput(DisplayValue = false)]
         public int ProductID { get; set; }
 
         [Required(ErrorMessage = "Product name is required")]
@@ -26,12 +26,10 @@ namespace w04a.Models
         [Display(Name = "Unit Price")]
         public object UnitPrice { get; set; }
 
-        //[UIHint("_CategoryDropDownList")]
         [UIHint("CategoryDropDownList")]
         [Display(Name = "Category")]
         public object CategoryID { get; set; }
 
-        //[UIHint("_SupplierDropDownList")]
         [UIHint("SupplierDropDownList")]
         [Display(Name = "Supplier")]
         public object SupplierID { get; set; }
