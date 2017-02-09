@@ -13,7 +13,7 @@ namespace w04a.Models
     public class ProductMetaData
     {
         [HiddenInput(DisplayValue = false)]
-        public int ProductID { get; set; }
+        public object ProductID { get; set; }
 
         [Required(ErrorMessage = "Product name is required")]
         [StringLength(30, ErrorMessage = "The {0} must be between {2} and {1} characters.", MinimumLength = 5)]
